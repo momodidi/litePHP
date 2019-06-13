@@ -3,7 +3,7 @@
 
 路由配置 
 
-### map 模式
+#### map 模式
 
 Home\Route\route.php 定义：
 
@@ -25,7 +25,7 @@ Home\Route\route.php 定义：
     
 
 
-### auto 模式
+#### auto 模式
 
 Controller(任意层级)
 
@@ -35,4 +35,4 @@ Controller(任意层级)
 
     Home\Controller\x1\x2 -> test()
     
-### 优先判断是否存在map，若不存在则执行auto模式，使用$_SERVER['PATH_INFO']来查找相应的类
+##### 优先判断是否存在map，若不存在则执行auto模式，使用$_SERVER['PATH_INFO']来查找相应的类
