@@ -2,7 +2,9 @@
 精简了框架内容，删除了很多日常api项目用不到的东西
 
 路由配置 
+
 ###map 模式
+
 Home\Route\route.php 定义：
 
     return array(
@@ -24,6 +26,7 @@ Home\Route\route.php 定义：
 
 
 ###auto 模式
+
 Controller(任意层级)
 
     Home/Controller/x1/x2Controller.class.php
