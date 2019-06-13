@@ -55,10 +55,7 @@ class App {
             }
         }
 
-        // 获取当前操作名 支持动态路由
-        if(!isset($action)){
-            $action    =   ACTION_NAME.C('ACTION_SUFFIX');  
-        }
+        $action    =   ACTION_NAME.C('ACTION_SUFFIX');  
         try{
             if(!preg_match('/^[A-Za-z](\w)*$/',$action)){
                 // 非法操作
