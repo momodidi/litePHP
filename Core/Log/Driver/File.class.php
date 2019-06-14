@@ -32,7 +32,10 @@ class File {
         if(is_file($destination) && floor($this->config['log_file_size']) <= filesize($destination) )
               rename($destination,dirname($destination).'/'.basename($destination,'.log').'-'.date('H_i_s').'.log');
         //检查日志目录的最近一层是否存在 2014年12月1日13:33:12  add by madong
-        if(!is_dir(dirname($destination)))   mkdir(dirname($destination));
+        chdir(APP_PATH);
+        if(!is_dir(dirname($destination))){
+            mkdirs(dirname($destination));
+        }
         //G('LOG_START');
         error_log("[{$now}] ".$_SERVER['REMOTE_ADDR'].' '.gethostname().' '.$_SERVER['REQUEST_URI']."\r\n{$log}\r\n", 3,$destination);
         //G('LOG_END');

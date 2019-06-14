@@ -1200,7 +1200,7 @@ function in_array_case($value,$array){
  */
 function mkdirs($dir,$lic = '0755'){
     if(!is_dir($dir)){
-        if(!mkDirs(dirname($dir))){
+        if(!mkdirs(dirname($dir))){
             return false;
         }
         if(!mkdir($dir,$lic)){
