@@ -37,7 +37,7 @@ defined('DATA_PATH')    or define('DATA_PATH',      RUNTIME_PATH.'Data/'); // �
 defined('CACHE_PATH')   or define('CACHE_PATH',     RUNTIME_PATH.'Cache/'); // 应用模板缓存目录
 defined('CONF_EXT')     or define('CONF_EXT',       '.php'); // 配置文件后缀
 defined('CONF_PARSE')   or define('CONF_PARSE',     '');    // 配置文件解析方法
-defined('MODULE_NAME')  or define('MODULE_NAME','Home');    //固定单模块
+defined('MODULE_NAME')  or define('MODULE_NAME','App');    //固定单模块
 
 // 系统信息
 
