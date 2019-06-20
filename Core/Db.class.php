@@ -126,6 +126,7 @@ class Db {
             if( C('DB_DSN') && 'pdo' != strtolower(C('DB_TYPE')) ) { // 如果设置了DB_DSN 则优先
                 $db_config =  $this->parseDSN(C('DB_DSN'));
             }else{
+                
                 $db_config = array (
                     'dbms'      =>  C('DB_TYPE'),
                     'username'  =>  C('DB_USER'),
@@ -139,6 +140,7 @@ class Db {
                 );
             }
         }
+        
         return $db_config;
     }
 
